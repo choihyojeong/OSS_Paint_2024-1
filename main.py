@@ -97,8 +97,8 @@ def add_text(event):# 텍스트 박스의 내용을 가져와서 클릭한 위�
    
 
 def toggle_fullscreen(event):
-    window.state = not window.state
-    window.attributes("-fullscreen", window.state)
+    window.state = not window.state  # window 객체의 상태를 토글합니다.
+    window.attributes("-fullscreen", window.state)  # window의 속성을 변경하여 전체 화면 모드를 설정합니다.
 
 # 좌우 반전 기능 추가
 def flip_horizontal():
